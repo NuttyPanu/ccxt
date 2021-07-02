@@ -25,7 +25,7 @@ $exchange = new $exchange_class (array (
     'secret' => 'eW2adRtSStSsSJSsI7ul1CHwIFDYpO4kQPXm1mh7Gvho1cLqObg1zoHgxQa8kT8R',
 ));
 
-
+/*
 $poloniex_markets = $poloniex->load_markets ();
 
 var_dump ($poloniex_markets);
@@ -38,8 +38,14 @@ var_dump ($quoinex->fetch_ticker ('ETH/EUR'));
 var_dump ($zaif->fetch_ticker ('BTC/JPY'));
 
 var_dump ($zaif->fetch_balance ());
+*/
 
-echo $bittrex->load_markets ();
+
+echo $zaif->load_markets ();
+echo $zaif->fetch_balance ();
+echo $zaif->fetch_ticker ('BTC/USD');
+
+
 /*
 
 // sell 1 BTC/JPY for market price, you pay ¥ and receive ฿ immediately
