@@ -1,7 +1,7 @@
 <?php
 include 'ccxt.php';
 echo "pass";
-exit();
+//exit();
 $poloniex = new \ccxt\poloniex ();
 $bittrex  = new \ccxt\bittrex  (array ('verbose' => true));
 $quoinex  = new \ccxt\quoinex   ();
