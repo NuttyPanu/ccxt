@@ -39,6 +39,7 @@ var_dump ($zaif->fetch_ticker ('BTC/JPY'));
 
 var_dump ($zaif->fetch_balance ());
 
+echo $bittrex->load_markets ();
 /*
 
 // sell 1 BTC/JPY for market price, you pay ¥ and receive ฿ immediately
