@@ -2,13 +2,17 @@
 include 'ccxt.php';
 echo "pass";
 //exit();
+
 $poloniex = new \ccxt\poloniex ();
 $bittrex  = new \ccxt\bittrex  (array ('verbose' => true));
 $quoinex  = new \ccxt\quoinex   ();
+
+
 $zaif     = new \ccxt\zaif     (array (
     'apiKey' => 'e9EqyEeZkrxFS7NQCU4IGXqTbR7RsXCYXKyX3kp8H39AL3tS26Hxnda6to8w59U2',
     'secret' => 'eW2adRtSStSsSJSsI7ul1CHwIFDYpO4kQPXm1mh7Gvho1cLqObg1zoHgxQa8kT8R',
 ));
+
 $hitbtc   = new \ccxt\hitbtc   (array (
     'apiKey' => 'e9EqyEeZkrxFS7NQCU4IGXqTbR7RsXCYXKyX3kp8H39AL3tS26Hxnda6to8w59U2',
     'secret' => 'eW2adRtSStSsSJSsI7ul1CHwIFDYpO4kQPXm1mh7Gvho1cLqObg1zoHgxQa8kT8R',
@@ -21,7 +25,7 @@ $exchange = new $exchange_class (array (
     'secret' => 'eW2adRtSStSsSJSsI7ul1CHwIFDYpO4kQPXm1mh7Gvho1cLqObg1zoHgxQa8kT8R',
 ));
 
-/*
+
 $poloniex_markets = $poloniex->load_markets ();
 
 var_dump ($poloniex_markets);
@@ -34,6 +38,8 @@ var_dump ($quoinex->fetch_ticker ('ETH/EUR'));
 var_dump ($zaif->fetch_ticker ('BTC/JPY'));
 
 var_dump ($zaif->fetch_balance ());
+
+/*
 
 // sell 1 BTC/JPY for market price, you pay ¥ and receive ฿ immediately
 var_dump ($zaif->id, $zaif->create_market_sell_order ('BTC/JPY', 1));
